@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+        button {
+            display: block; /* Isso faz com que o elemento ocupe uma linha inteira.*/ 
+            margin: 10px auto; /* auto centraliza */
+
+            background-color: #f22d2d;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            border: 0;
+            padding: 25px 45px;
+            border-radius: 12px;
+        }
+        img {
+            width: 300px;
+            display: none;
+            margin: 60px auto; /* O auto só funcionou porque o elemento está com display: block */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mostrarSurpresa()">Clique para revelar a surpresa!</button>
+
+    <img src="gato_fofinho.jpg" alt="Gato fofinho">
+
+    <script>
+        function mostrarSurpresa(){
+            document.querySelector('img').style.display = 'block'; // docuement quer dizer o documento html
+        }
+        // let elemento = document.querySelector(seletor);
+    </script>
+</body>
+</html>
